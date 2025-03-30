@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Creative Portfolio with Interactive Animations and Stunning Visuals">
+    <meta name="description" content="Creative Portfolio with Neon Colors and Interactive Animations">
     <title>Creative Portfolio</title>
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #121212;
+            background-color: #121212; /* Dark Background */
             color: #fff;
             line-height: 1.6;
         }
@@ -23,11 +23,12 @@
             font-family: 'Roboto', sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
+            color: #00f7ff; /* Neon Blue */
         }
 
         #hero {
             height: 100vh;
-            background-image: url('https://via.placeholder.com/1500x1000'); /* Placeholder image */
+            background-image: url('https://via.placeholder.com/1500x1000'); /* Placeholder Image */
             background-size: cover;
             display: flex;
             justify-content: center;
@@ -40,21 +41,24 @@
 
         .hero-content {
             z-index: 2;
+            text-shadow: 0 0 15px #00f7ff, 0 0 25px #00f7ff;
         }
 
         .cta-btn {
             padding: 12px 24px;
-            background-color: #00ffcc;
+            background-color: #ff00c8; /* Neon Pink */
             border: none;
             color: #fff;
             font-size: 18px;
             border-radius: 5px;
             text-decoration: none;
+            box-shadow: 0 0 10px #ff00c8, 0 0 20px #ff00c8;
             transition: background-color 0.3s ease-in-out;
         }
 
         .cta-btn:hover {
-            background-color: #00cc99;
+            background-color: #ff80c0;
+            box-shadow: 0 0 20px #ff80c0, 0 0 40px #ff80c0;
         }
 
         #about, #projects {
@@ -81,6 +85,7 @@
 
         .project-card:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 255, 204, 0.7);
         }
 
         .image-wrapper {
@@ -98,7 +103,7 @@
         .project-info h3 {
             font-size: 1.8em;
             margin-bottom: 10px;
-            color: #00ffcc;
+            color: #00f7ff; /* Neon Blue */
         }
 
         .project-info p {
@@ -109,7 +114,7 @@
             background-color: #111;
             padding: 20px;
             text-align: center;
-            color: #00ffcc;
+            color: #00f7ff;
         }
 
         @keyframes fadeIn {
@@ -133,8 +138,8 @@
 <body>
     <section id="hero">
         <div class="hero-content">
-            <h1>Welcome to My Creative Portfolio</h1>
-            <p>Bringing Your Ideas to Life</p>
+            <h1>Welcome to My Neon Portfolio</h1>
+            <p>Designing the Future with Neon Lights and Technology</p>
             <a href="#projects" class="cta-btn">Explore My Work</a>
         </div>
     </section>
@@ -142,7 +147,7 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>I'm a passionate web developer who turns creative ideas into stunning websites.</p>
+            <p>I'm a web developer, passionate about creating visually stunning and interactive websites. My work blends creativity with technology, utilizing neon colors to bring life to my projects.</p>
         </div>
     </section>
 
@@ -155,7 +160,7 @@
                 </div>
                 <div class="project-info">
                     <h3>Project 1</h3>
-                    <p>A creative website designed with innovative features and aesthetics.</p>
+                    <p>An interactive website with a neon glow effect and sleek animations.</p>
                 </div>
             </div>
             <div class="project-card">
@@ -164,7 +169,7 @@
                 </div>
                 <div class="project-info">
                     <h3>Project 2</h3>
-                    <p>A modern portfolio with interactive animations and a unique layout.</p>
+                    <p>A futuristic portfolio with neon colors and smooth transitions for a modern look.</p>
                 </div>
             </div>
         </div>
@@ -172,7 +177,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 My Creative Portfolio | All Rights Reserved</p>
+            <p>&copy; 2025 Neon Creative Portfolio | All Rights Reserved</p>
         </div>
     </footer>
 
