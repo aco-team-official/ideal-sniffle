@@ -1,26 +1,148 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sci-Fi Themed Portfolio - Futuristic, interactive design">
-    <title>Sci-Fi Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <meta name="description" content="Creative Portfolio with Interactive Animations and Stunning Visuals">
+    <title>Creative Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        #hero {
+            height: 100vh;
+            background-image: url('https://via.placeholder.com/1500x1000'); /* Placeholder image */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        .cta-btn {
+            padding: 12px 24px;
+            background-color: #00ffcc;
+            border: none;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-btn:hover {
+            background-color: #00cc99;
+        }
+
+        #about, #projects {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #1a1a1a;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .project-card {
+            display: inline-block;
+            width: 45%;
+            margin: 20px 2%;
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 255, 204, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .image-wrapper {
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-info h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
+
+        .project-info p {
+            color: #aaa;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #00ffcc;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 768px) {
+            .project-card {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Cosmic Portfolio</h1>
-            <p>Web Developer | Innovator | Futurist</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Creative Portfolio</h1>
+            <p>Bringing Your Ideas to Life</p>
+            <a href="#projects" class="cta-btn">Explore My Work</a>
         </div>
-    </header>
+    </section>
 
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Welcome to my Sci-Fi inspired portfolio! I'm a web developer focused on creating futuristic designs with cutting-edge technology.</p>
+            <p>I'm a passionate web developer who turns creative ideas into stunning websites.</p>
         </div>
     </section>
 
@@ -28,22 +150,45 @@
         <div class="container">
             <h2>My Projects</h2>
             <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of your first sci-fi project.</p>
+                <div class="image-wrapper">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>A creative website designed with innovative features and aesthetics.</p>
+                </div>
             </div>
             <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of your second sci-fi project.</p>
+                <div class="image-wrapper">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>A modern portfolio with interactive animations and a unique layout.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>Contact: cosmic.email@example.com</p>
+            <p>&copy; 2025 My Creative Portfolio | All Rights Reserved</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.style.transform = 'scale(1.1)';
+                    card.style.transition = 'all 0.3s ease-in-out';
+                });
+                card.addEventListener('mouseout', () => {
+                    card.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
 </body>
 </html>
